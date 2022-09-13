@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "target": "ESNext",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src/",
+    "incremental": true,
+    "noUncheckedIndexedAccess":true,
+    "paths": {
+      "@/*": ["/*"],
+      "@base/*": ["base/*"],
+      "@common/*": ["common/*"],
+      "@configs/*": ["configs/*"],
+      "@constants/*": ["constants/*"],
+      "@databases/*": ["databases/*"],
+      "@decorators/*": ["decorators/*"],
+      "@exceptions/*": ["exceptions/*"],
+      "@filters/*": ["filters/*"],
+      "@guards/*": ["guards/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@jobs/*": ["jobs/*"],
+      "@mails/*": ["mails/*"],
+      "@modules/*": ["modules/*"],
+      "@views/*": ["views/*"],
+      "@utils/*": ["utils/*"],
+    }
+  },
+  "include": ["src/**/**/*.ts", "test"],
+  "exclude": ["src/databases/migrations/*"]
+}
